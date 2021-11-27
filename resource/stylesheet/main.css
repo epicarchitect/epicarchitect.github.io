@@ -1,0 +1,39 @@
+body {
+    padding: 0.5vmin;
+    background-color: #000;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: mediumpurple;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+}
+
+a:hover {
+    text-shadow: 0px 0px 5px mediumpurple;
+    padding-left: 8px;
+}
+
+a:visited {
+    color: mediumpurple;
+}
+
+.title {
+    margin-top: 3vmin;
+    margin-left: 3vmin;
+    font-size: 7vmin;
+}
+
+.navigation_items {
+    padding: 0;
+    margin-top: 3vmin;
+    margin-left: 3.2vmin;
+    font-size: 5vmin;
+    list-style-type: none;
+}
+
+.navigation_items li {
+    margin-top: 2vmin;
+}
