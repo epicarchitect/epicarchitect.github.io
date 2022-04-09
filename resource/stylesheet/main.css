@@ -2,7 +2,7 @@ body {
     padding: 0.5vmin;
     background-color: #000;
     color: rgba(255, 255, 255, 0.6);
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: sans-serif;
 }
 
 a {
@@ -23,6 +23,10 @@ a:visited {
     margin-top: 3vmin;
     margin-left: 3vmin;
     font-size: 7vmin;
+    letter-spacing: 1.5vmin;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
 }
 
 .navigation_items {
