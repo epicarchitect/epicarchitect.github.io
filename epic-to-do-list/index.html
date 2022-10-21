@@ -18,10 +18,17 @@
             scroll-behavior: smooth;
         }
 
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
         body {
             margin: 0;
             padding: 0;
             background: #F9D798;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            overflow-y: scroll;
         }
 
         h1,
