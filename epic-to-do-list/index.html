@@ -7,23 +7,718 @@
     <title>Alexander Kolmachikhin — Epic to-do list</title>
     <link rel="stylesheet" href="../resource/stylesheet/main.css">
     <link rel="icon" href="../resource/image/epic_to_do_list/ic_launcher.png">
+    <style>
+        * {
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #F9D798;
+        }
+
+        h1,
+        h3,
+        a {
+            color: #6C3E25;
+            text-align: center;
+        }
+
+        a {
+            display: block;
+        }
+
+        .small_button {
+            width: 30px;
+            height: 30px;
+            margin: auto;
+            border: 5px solid #6C3E25;
+            cursor: pointer;
+        }
+
+        .flex_container,
+        .buttons_parts_container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .buttons_parts_container {
+            padding: 5px 5px 0px 5px;
+            background: #6C3E25;
+        }
+
+        .hero_part {
+            height: 80vw;
+            width: 80vw;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0px auto 0px auto;
+        }
+
+        .frame_part {
+            margin: 5px;
+            height: 70px;
+            width: 70px;
+            border: 5px solid #6C3E25;
+            position: relative;
+        }
+
+        .frame_part:hover {
+            background: #CAB47C;
+            cursor: pointer;
+        }
+
+        .part {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .body_in_part {
+            width: 100%;
+            height: 100%;
+            background: #F9D798;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .button_parts {
+            display: block;
+            margin: auto;
+            padding: 10px 20px 10px 20px;
+            background: #6C3E25;
+            color: #F9D798;
+        }
+
+        .button_parts:hover {
+            cursor: pointer;
+            background: #F9D798;
+            color: #6C3E25;
+        }
+
+        .hero_body {
+            height: 80vw;
+            width: 80vw;
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 5px auto;
+            border: 5px solid #6C3E25;
+        }
+
+        #hero_body_animated_frame {
+            position: relative;
+            animation-timing-function: ease-in-out;
+            animation: 2s infinite alternate breath;
+        }
+
+        #kostil {
+            position: relative;
+            width: 80vw;
+            height: 5px;
+            margin: 0px auto;
+            top: -10px;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background: #6C3E25;
+        }
+
+        @keyframes breath {
+            from {
+                top: 5px;
+            }
+
+            to {
+                top: 0px;
+            }
+        }
+
+        .hero_container {
+            display: block;
+            margin: 5px auto;
+            width: 90vw;
+            border: 5px solid #6C3E25;
+            box-shadow: #CAB47C 3px 3px;
+            background: #F9D798;
+        }
+
+        .ic_google_play {
+            width: 80px;
+        }
+
+        @media (min-width: 900px) {
+            .hero_container {
+                width: 30vw;
+            }
+
+            #kostil {
+                width: 25vw;
+            }
+
+            .hero_body {
+                height: 25vw;
+                width: 25vw;
+            }
+
+            .hero_part {
+                height: 25vw;
+                width: 25vw;
+            }
+        }
+    </style>
+    <script type="text/javascript" src="https://epic-to-do-list-privacy-policy.github.io/storage.js"></script>
 </head>
 
 <body>
-<div class="title">Epic to-do list</div>
 
-<ul class="navigation_items">
-    <li>
-        <a href="https://play.google.com/store/apps/details?id=kolmachikhin.alexander.epicto_dolist" target="_blank">
-            Google Play
+    <h1>Epic to-do list</h1>
+
+    <div class="hero_container">
+
+        <h3>CREATING A HERO</h3>
+
+        <div class="flex_container">
+            <div id="button_show_headdress" class="small_button"></div>
+            <div id="button_random" class="small_button"></div>
+        </div>
+
+        <div class="hero_body">
+            <div id="hero_location" class="hero_part" src=""></div>
+            <div id="hero_body_animated_frame">
+                <div id="hero_back_weapon" class="hero_part" src=""></div>
+                <div id="hero_back_hair" class="hero_part" src=""></div>
+                <div id="hero_back_headdress" class="hero_part" src=""></div>
+                <div id="hero_ears" class="hero_part" src=""></div>
+                <div id="hero_body" class="hero_part" src=""></div>
+                <div id="hero_extras" class="hero_part" src=""></div>
+                <div id="hero_beard" class="hero_part" src=""></div>
+                <div id="hero_eyes" class="hero_part" src=""></div>
+                <div id="hero_brows" class="hero_part" src=""></div>
+                <div id="hero_hair" class="hero_part" src=""></div>
+                <div id="hero_headdress" class="hero_part" src=""></div>
+            </div>
+        </div>
+
+        <div id="kostil"></div>
+
+        <div class="buttons_parts_container" style="margin-bottom: 5px">
+            <div id="button_man" class="button_parts">Man</div>
+            <div id="button_woman" class="button_parts">Woman</div>
+        </div>
+
+        <div class="buttons_parts_container">
+            <div id="button_hair" class="button_parts">Hair</div>
+            <div id="button_beard" class="button_parts">Beard</div>
+            <div id="button_eyes" class="button_parts">Eyes</div>
+            <div id="button_ears" class="button_parts">Ears</div>
+            <div id="button_brows" class="button_parts">Brows</div>
+            <div id="button_extras" class="button_parts">Extras</div>
+            <div id="button_costume" class="button_parts">Costume</div>
+            <div id="button_weapon" class="button_parts">Weapon</div>
+            <div id="button_location" class="button_parts">Location</div>
+        </div>
+
+        <div id="parts_container" class="flex_container">
+            <div class="frame_part">
+                <div class="body_in_part"></div>
+                <div class="part"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="flex_container" style="background: black; margin-top: 24px; padding: 24px">
+        <a href="https://play.google.com/store/apps/details?id=kolmachikhin.alexander.epicto_dolist">
+            <img class="ic_google_play"
+                src="https://www.androidpolice.com/wp-content/uploads/2017/05/nexus2cee_ic_launcher_play_store_new-1.png">
         </a>
-    </li>
-    <li>
-        <a href="privacy-policy.html">
-            Privacy Policy
+
+        <a href="https://play.google.com/store/apps/details?id=kolmachikhin.alexander.epicto_dolist"
+            style="color: white" target="_blank">
+            Watch on Google Play
         </a>
-    </li>
-</ul>
+    </div>
+
+    <script>
+
+        var selectedGender = 0;
+        var selectedLocation = 0;
+        var selectedWeapon = 0;
+        var selectedEars = 0;
+        var selectedBody = 0;
+        var selectedExtras = 0;
+        var selectedBeard = 0;
+        var selectedEyes = 0;
+        var selectedBrows = 0;
+        var selectedHair = 0;
+
+        var activeParts = 0;
+        var isHeaddressVisible = true;
+
+        var HAIR = 0;
+        var BEARD = 1;
+        var EYES = 2;
+        var EARS = 3;
+        var BROWS = 4;
+        var EXTRAS = 5;
+        var COSTUME = 6;
+        var WEAPON = 7;
+        var LOCATION = 8;
+
+        var colorPrimary = "#F9D798";
+        var colorPrimaryDark = "#6C3E25";
+
+        function setGender(i) {
+            selectedGender = i;
+        }
+
+        function setBackground(view, src) {
+            view.style.background = "url('" + src + "') center/cover no-repeat";
+        }
+
+        function setLocation(i) {
+            setBackground(hero_location, locations[i]);
+            selectedLocation = i;
+        }
+
+        function setBackWeapon(i) {
+            setBackground(hero_back_weapon, backWeapons[i]);
+            selectedWeapon = i;
+        }
+
+        function setEars(i) {
+            setBackground(hero_ears, ears[selectedGender][i]);
+            selectedEars = i;
+        }
+
+        function setBody(i) {
+            setBackground(hero_body, bodies[selectedGender][i]);
+            setBackground(hero_back_headdress, backHeaddress[selectedGender][i]);
+            var tmp = headdress[selectedGender][i];
+            setBackground(hero_headdress, tmp);
+
+            if (tmp != "") {
+                hideHair();
+                hideEars();
+            } else {
+                showHair();
+                showEars();
+            }
+
+            selectedBody = i;
+        }
+
+        function setExtras(i) {
+            setBackground(hero_extras, extras[selectedGender][i]);
+            selectedExtras = i;
+        }
+
+        function setBeard(i) {
+            setBackground(hero_beard, beards[selectedGender][i]);
+            selectedBeard = i;
+        }
+
+        function setEyes(i) {
+            setBackground(hero_eyes, eyes[selectedGender][i]);
+            selectedEyes = i;
+        }
+
+        function setBrows(i) {
+            setBackground(hero_brows, brows[selectedGender][i]);
+            selectedBrows = i;
+        }
+
+        function setHair(i) {
+            setBackground(hero_back_hair, backHairs[selectedGender][i]);
+            setBackground(hero_hair, hairs[selectedGender][i]);
+            selectedHair = i;
+        }
+
+        function hideEars() {
+            hero_ears.style.visibility = "hidden";
+        }
+
+        function showEars() {
+            hero_ears.style.visibility = "visible";
+        }
+
+        function hideHair() {
+            hero_back_hair.style.visibility = "hidden";
+            hero_hair.style.visibility = "hidden";
+        }
+
+        function hideHeaddress() {
+            hero_back_headdress.style.visibility = "hidden";
+            hero_headdress.style.visibility = "hidden";
+            setBackground(button_show_headdress, srcHeaddressHide);
+            isHeaddressVisible = false;
+            showHair();
+            showEars();
+        }
+
+        function showHair() {
+            hero_back_hair.style.visibility = "visible";
+            hero_hair.style.visibility = "visible";
+        }
+
+        function showHeaddress() {
+            hero_back_headdress.style.visibility = "visible";
+            hero_headdress.style.visibility = "visible";
+            setBackground(button_show_headdress, srcHeaddressShow);
+            isHeaddressVisible = true;
+            hideHair();
+            hideEars();
+        }
+
+        function changeHeaddressVisibilty() {
+            if (selectedBody == 3 || selectedBody == 4 || selectedBody == 5 || selectedBody == 6) {
+                if (isHeaddressVisible) {
+                    hideHeaddress();
+                } else {
+                    showHeaddress();
+                }
+            }
+        }
+
+        function buildFramePart(i) {
+            var body = "<div class='body_in_part'></div>";
+            var part = "<div class='part'></div>";
+            var frame = "<div id='" + i + "' class='frame_part'>" + body + part + "</div>";
+            return frame;
+        }
+
+        function setParts(parts, listener) {
+            var frames = "";
+            var size = parts.length;
+            if (activeParts != LOCATION && activeParts != WEAPON) size = parts[selectedGender].length;
+
+            for (let i = 0; i < size; i++) {
+                frames += buildFramePart(i);
+            }
+            parts_container.innerHTML = frames;
+
+            if (activeParts != LOCATION && activeParts != WEAPON && activeParts != COSTUME) setViewsBodyInParts();
+            setViewsParts(parts, listener)
+        }
+
+        function setViewsBodyInParts() {
+            var bodyInParts = document.getElementsByClassName("body_in_part");
+            for (let i = 0; i < bodyInParts.length; i++) {
+                bodyInParts[i].style.background = "url('" + bodies[selectedGender][selectedBody] + "') center/cover no-repeat";
+            }
+        }
+
+        function setViewsParts(parts, listener) {
+            var partViews = document.getElementsByClassName("part");
+            for (let i = 0; i < partViews.length; i++) {
+
+                var src = parts[i];
+                if (activeParts != LOCATION && activeParts != WEAPON) src = parts[selectedGender][i];
+
+                partViews[i].style.background = "url('" + src + "') center/cover no-repeat";
+                partViews[i].addEventListener('click', () => {
+                    listener(i);
+                    scroll(100);
+                });
+            }
+            scroll(1000);
+        }
+
+        function scroll(y) {
+            window.scrollTo(0, y);
+        }
+
+        button_hair.addEventListener('click', setPartsHair);
+        button_beard.addEventListener('click', setPartsBeard);
+        button_eyes.addEventListener('click', setPartsEyes);
+        button_ears.addEventListener('click', setPartsEars);
+        button_brows.addEventListener('click', setPartsBrows);
+        button_extras.addEventListener('click', setPartsExtras);
+        button_costume.addEventListener('click', setPartsBody);
+        button_weapon.addEventListener('click', setPartsWeapons);
+        button_location.addEventListener('click', setPartsLocations);
+        button_show_headdress.addEventListener('click', changeHeaddressVisibilty);
+
+        function setBgPrimary(v) {
+            v.style.background = colorPrimary;
+        }
+
+        function setColorPrimary(v) {
+            v.style.color = colorPrimary;
+        }
+
+        function setBgPrimaryDark(v) {
+            v.style.background = colorPrimaryDark;
+        }
+
+        function setColorPrimaryDark(v) {
+            v.style.color = colorPrimaryDark;
+        }
+
+        function select(v) {
+            setBgPrimary(v);
+            setColorPrimaryDark(v);
+        }
+
+        function unselect(v) {
+            setBgPrimaryDark(v);
+            setColorPrimary(v);
+        }
+
+        button_man.addEventListener('click', () => {
+            setGender(0);
+            reloadParts();
+
+            select(button_man);
+            unselect(button_woman);
+        });
+
+        button_woman.addEventListener('click', () => {
+            setGender(1);
+            reloadParts();
+
+            select(button_woman);
+            unselect(button_man);
+        });
+
+        function reloadParts() {
+            if (activeParts == LOCATION) {
+                setPartsLocations();
+            } else if (activeParts == WEAPON) {
+                setPartsWeapons();
+            } else if (activeParts == EARS) {
+                setPartsEars();
+            } else if (activeParts == COSTUME) {
+                setPartsBody();
+            } else if (activeParts == EXTRAS) {
+                setPartsExtras();
+            } else if (activeParts == BEARD) {
+                setPartsBeard();
+            } else if (activeParts == EYES) {
+                setPartsEyes();
+            } else if (activeParts == BROWS) {
+                setPartsBrows();
+            } else if (activeParts == HAIR) {
+                setPartsHair();
+            }
+
+            setGender(selectedGender);
+            setLocation(selectedLocation);
+            setBackWeapon(selectedWeapon);
+            setEars(selectedEars);
+            setBody(selectedBody);
+            setExtras(selectedExtras);
+            setBeard(selectedBeard);
+            setEyes(selectedEyes);
+            setBrows(selectedBrows);
+            setHair(selectedHair);
+        }
+
+        function setPartsLocations() {
+            select(button_location);
+            unselect(button_weapon);
+            unselect(button_ears);
+            unselect(button_costume);
+            unselect(button_extras);
+            unselect(button_beard);
+            unselect(button_eyes);
+            unselect(button_brows);
+            unselect(button_hair);
+
+
+            activeParts = LOCATION;
+            setParts(locations, (i) => {
+                setLocation(i);
+            });
+        }
+
+        function setPartsWeapons() {
+            unselect(button_location);
+            select(button_weapon);
+            unselect(button_ears);
+            unselect(button_costume);
+            unselect(button_extras);
+            unselect(button_beard);
+            unselect(button_eyes);
+            unselect(button_brows);
+            unselect(button_hair);
+
+            activeParts = WEAPON;
+            setParts(backWeapons, (i) => {
+                setBackWeapon(i);
+            });
+        }
+
+        function setPartsEars() {
+            unselect(button_location);
+            unselect(button_weapon);
+            select(button_ears);
+            unselect(button_costume);
+            unselect(button_extras);
+            unselect(button_beard);
+            unselect(button_eyes);
+            unselect(button_brows);
+            unselect(button_hair);
+            activeParts = EARS;
+            setParts(ears, (i) => {
+                setEars(i);
+            });
+        }
+
+        function setPartsBody() {
+            unselect(button_location);
+            unselect(button_weapon);
+            unselect(button_ears);
+            select(button_costume);
+            unselect(button_extras);
+            unselect(button_beard);
+            unselect(button_eyes);
+            unselect(button_brows);
+            unselect(button_hair);
+
+            activeParts = COSTUME;
+            setParts(bodies, (i) => {
+                setBody(i);
+            });
+        }
+
+        function setPartsExtras() {
+            unselect(button_location);
+            unselect(button_weapon);
+            unselect(button_ears);
+            unselect(button_costume);
+            select(button_extras);
+            unselect(button_beard);
+            unselect(button_eyes);
+            unselect(button_brows);
+            unselect(button_hair);
+
+            activeParts = EXTRAS;
+            setParts(extras, (i) => {
+                setExtras(i);
+            });
+        }
+
+        function setPartsBeard() {
+            unselect(button_location);
+            unselect(button_weapon);
+            unselect(button_ears);
+            unselect(button_costume);
+            unselect(button_extras);
+            select(button_beard);
+            unselect(button_eyes);
+            unselect(button_brows);
+            unselect(button_hair);
+
+            activeParts = BEARD;
+            setParts(beards, (i) => {
+                setBeard(i);
+            });
+        }
+
+        function setPartsEyes() {
+            unselect(button_location);
+            unselect(button_weapon);
+            unselect(button_ears);
+            unselect(button_costume);
+            unselect(button_extras);
+            unselect(button_beard);
+            select(button_eyes);
+            unselect(button_brows);
+            unselect(button_hair);
+
+            activeParts = EYES;
+            setParts(eyes, (i) => {
+                setEyes(i);
+            });
+        }
+
+        function setPartsBrows() {
+            unselect(button_location);
+            unselect(button_weapon);
+            unselect(button_ears);
+            unselect(button_costume);
+            unselect(button_extras);
+            unselect(button_beard);
+            unselect(button_eyes);
+            select(button_brows);
+            unselect(button_hair);
+
+            activeParts = BROWS;
+            setParts(brows, (i) => {
+                setBrows(i);
+            });
+        }
+
+        function setPartsHair() {
+            unselect(button_location);
+            unselect(button_weapon);
+            unselect(button_ears);
+            unselect(button_costume);
+            unselect(button_extras);
+            unselect(button_beard);
+            unselect(button_eyes);
+            unselect(button_brows);
+            select(button_hair);
+
+            activeParts = HAIR;
+            setParts(hairs, (i) => {
+                setHair(i);
+            });
+        }
+
+        function random() {
+            setLocation(randInt(locations.length));
+            setBackWeapon(randInt(backWeapons.length));
+            setEars(randInt(ears[selectedGender].length));
+            setBody(randInt(bodies[selectedGender].length));
+            setExtras(randInt(extras[selectedGender].length));
+            setBeard(randInt(beards[selectedGender].length));
+            setEyes(randInt(eyes[selectedGender].length));
+            setBrows(randInt(brows[selectedGender].length));
+            setHair(randInt(hairs[selectedGender].length));
+        }
+
+        function randInt(max) {
+            return Math.floor(Math.random() * Math.floor(max));
+        }
+
+        setBackground(button_random, srcRandom);
+        button_random.addEventListener('click', random);
+
+        setGender(0);
+        select(button_man);
+        unselect(button_woman);
+        setBackground(button_show_headdress, srcHeaddressShow);
+        reloadParts();
+
+        random();
+
+
+
+    </script>
+
 </body>
 
 </html>
