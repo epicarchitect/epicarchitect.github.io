@@ -185,6 +185,17 @@
                 width: 25vw;
             }
         }
+
+        @media (max-width: 900px) {
+            .hero_container {
+                display: block;
+                margin: 0px auto;
+                width: 100vw;
+                border: 0px solid #6C3E25;
+                box-shadow: #CAB47C 0px 0px;
+                background: #F9D798;
+            }
+        }
     </style>
     <script type="text/javascript" src="https://epic-to-do-list-privacy-policy.github.io/storage.js"></script>
 </head>
@@ -439,10 +450,8 @@
                 partViews[i].style.background = "url('" + src + "') center/cover no-repeat";
                 partViews[i].addEventListener('click', () => {
                     listener(i);
-                    scroll(100);
                 });
             }
-            scroll(1000);
         }
 
         function scroll(y) {
