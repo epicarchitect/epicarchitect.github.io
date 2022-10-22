@@ -2,6 +2,7 @@
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    cursor: default;
 }
 
 body {
@@ -15,6 +16,7 @@ a {
     color: mediumpurple;
     text-decoration: none;
     transition: ease-in-out 0.3s;
+    cursor: pointer;
 }
 
 a:hover {
