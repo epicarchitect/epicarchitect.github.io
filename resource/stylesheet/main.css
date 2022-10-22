@@ -1,3 +1,9 @@
+* {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 body {
     padding: 0.5vmin;
     background-color: #000;
