@@ -1,100 +1,432 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width'>
-    <title>Epic to-do list — Privacy Policy</title>
+    <title>Epic to-do list — Privacy Policy / Политика конфиденциальности / Informativa sulla privacy</title>
     <link rel="stylesheet" href="../resource/stylesheet/main.css">
     <link rel="icon" href="../resource/image/epic_to_do_list/ic_launcher.png">
+    <style>
+        [hidden] { display: none !important; }
+        .policy-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 1.2em;
+        }
+        .policy-header h2 {
+            flex: 1;
+            min-width: 0;
+            margin: 0;
+            color: #fff;
+        }
+        .language-switch select {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 6px 10px;
+            font: inherit;
+            outline: none;
+            cursor: pointer;
+        }
+        .language-switch option {
+            background-color: #000;
+            color: #fff;
+        }
+        body, body * {
+            -webkit-user-select: text;
+            -moz-user-select: text;
+            -ms-user-select: text;
+            user-select: text;
+        }
+        .policy-section {
+            margin: 0 0 14px;
+            padding: 16px 18px;
+            background: #0d0c11;
+            border-left: 2px solid mediumpurple;
+            border-radius: 6px;
+        }
+        .policy-section strong {
+            display: block;
+            margin-bottom: 7px;
+            color: #fff;
+            font-size: 1.05em;
+        }
+        .policy-section a {
+            word-break: break-word;
+        }
+        .policy-section ul {
+            margin: 8px 0 0;
+            padding-left: 22px;
+        }
+        .policy-section li {
+            margin: 0 0 7px;
+        }
+        .policy-meta {
+            margin: 0 0 14px;
+            font-size: 0.92em;
+            opacity: 0.85;
+        }
+
+        .policy-section h3 {
+            margin: 0 0 8px;
+            color: #fff;
+            font-size: 1.05em;
+            line-height: 1.35;
+        }
+        .policy-section p {
+            margin: 0 0 8px;
+        }
+        .policy-section p:last-child {
+            margin-bottom: 0;
+        }
+        .policy-section table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 8px 0;
+            font-size: 0.9em;
+        }
+        .policy-section th,
+        .policy-section td {
+            border: 1px solid #2b2733;
+            padding: 6px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .policy-section th {
+            color: #fff;
+        }
+        .policy-section code {
+            background: #1a1820;
+            padding: 1px 4px;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 
 <body>
-<h2>Privacy Policy</h2>
-<p>
-    Alexander Kolmachikhin built the Epic to-do list app as an Ad Supported app. This SERVICE is provided by Alexander Kolmachikhin at no cost and is intended for use as is.
-</p>
-<p>
-    This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.
-</p>
-<p>
-    If you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with
-    anyone except as described in this Privacy Policy.
-</p>
-<p>
-    The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at Epic to-do list unless otherwise defined in this Privacy Policy.
-</p>
-<p><strong>Information Collection and Use</strong></p>
-<p>
-    For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information. The information that I request will be retained on your device and is not collected by me in any way.
-</p>
-<div>
-    <p>
-        The app does use third party services that may collect information used to identify you.
-    </p>
-    <p>
-        Link to privacy policy of third party service providers used by the app
-    </p>
-    <ul>
-        <li><a href="https://www.google.com/policies/privacy/" target="_blank">Google Play Services</a></li>
-        <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank">AdMob</a></li>
-        <li><a href="https://firebase.google.com/policies/analytics" target="_blank">Google Analytics for Firebase</a></li>
-        <li><a href="https://firebase.google.com/support/privacy/" target="_blank">Firebase Crashlytics</a></li>
-        <!---->
-        <li><a href="https://policies.google.com/privacy" target="_blank">Fabric</a></li>
-        <!---->
-        <!---->
-        <!---->
-        <li><a href="https://www.appodeal.com/home/privacy-policy/" target="_blank">Appodeal</a></li>
-        <!---->
-        <!---->
-        <!---->
-        <!---->
-        <!---->
-        <!---->
-    </ul>
+<div class="policy-header">
+    <h2 id="policy-title">Privacy Policy</h2>
+    <div class="language-switch">
+        <select id="language-select" aria-label="Language">
+            <option value="en" selected>English</option>
+            <option value="ru">Русский</option>
+            <option value="it">Italiano</option>
+        </select>
+    </div>
 </div>
-<p><strong>Log Data</strong></p>
-<p>
-    I want to inform you that whenever you use my Service, in a case of an error in the app I collect data and information (through third party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol
-    (“IP”) address, device name, operating system version, the configuration of the app when utilizing my Service, the time and date of your use of the Service, and other statistics.
-</p>
-<p><strong>Cookies</strong></p>
-<p>
-    Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device's internal memory.
-</p>
-<p>
-    This Service does not use these “cookies” explicitly. However, the app may use third party code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies and know when
-    a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.
-</p>
-<p><strong>Service Providers</strong></p>
-<p>
-    I may employ third-party companies and individuals due to the following reasons:
-</p>
+
+<div id="policy-en" lang="en">
+<p class="policy-meta">Effective date: 25 October 2026.</p>
+
+<div class="policy-section">
+<h3 id="operator">1. Operator</h3>
+<p>Operator: Individual Entrepreneur Aleksandr Stanislavovich Kolmachikhin, INN 540549978493, OGRNIP 326547600161892, Novosibirsk, Russia.</p>
+<p>Data contact: <a href="mailto:epic-to-do-list@mail.ru">epic-to-do-list@mail.ru</a>.</p>
+<p>App: Epic to-do list, application ID <code>kolmachikhin.alexander.epicto_dolist</code>.</p>
+</div>
+
+<div class="policy-section">
+<h3 id="scope-and-version">2. Scope and version</h3>
+<p>This Policy applies to all users. The Operator processes data in accordance with applicable law. If applicable law grants you additional rights, those rights apply alongside this Policy. Nothing in this Policy limits any rights that cannot be limited under applicable law.</p>
+<p>This Policy does not apply to third-party websites or services.</p>
+</div>
+
+<div class="policy-section">
+<h3 id="data-operator-processes">3. Data the Operator processes</h3>
 <ul>
-    <li>To facilitate our Service;</li>
-    <li>To provide the Service on our behalf;</li>
-    <li>To perform Service-related services; or</li>
-    <li>To assist us in analyzing how our Service is used.</li>
+<li><strong>Local data.</strong> Tasks, skills, hero data, settings, progress and other app data. This data is created by you or generated by the App; it is not transferred and remains on the device unless you export or share it yourself.</li>
+<li><strong>Analytics.</strong> Sessions and automatic technical events, device/OS/version, IP, pseudonymous ID, install source. The App and the AppMetrica SDK provide this data; it is transferred to Yandex.</li>
+<li><strong>Crashes/ANR.</strong> Stack traces, device/OS/app diagnostics. The App and the AppMetrica SDK provide this data; it is transferred to Yandex.</li>
+<li><strong>Advertising.</strong> IP, device, impressions, clicks, advertising ID (for personalized ads, with consent). The App and the Yandex Ads SDK provide this data; it is transferred to Yandex.</li>
+<li><strong>Consent.</strong> Choice, time and version. The user provides this data; it is not transferred and remains on the device.</li>
+<li><strong>Support.</strong> Email address and message. The user provides this data; it is transferred to the Operator's email provider.</li>
 </ul>
-<p>
-    I want to inform users of this Service that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other
-    purpose.
-</p>
-<p><strong>Security</strong></p>
-<p>
-    I value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and
-    reliable, and I cannot guarantee its absolute security.
-</p>
-<p><strong>Changes to This Privacy Policy</strong></p>
-<p>
-    I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page.
-</p>
-<p>This policy is effective as of 2020-06-01</p>
-<p><strong>Contact Us</strong></p>
-<p>
-    If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at epic-to-do-list@mail.ru.
-</p>
+<p>The Operator does not intentionally collect special categories of personal data, and does not intentionally send task content to Yandex. The App may store whatever you enter in local tasks on your device; please do not enter sensitive data unless you are comfortable storing it locally. The Operator does not request access to your device's precise location, contacts, camera or microphone; the ad SDK may infer an approximate location from your IP address. The Android advertising ID may be used for personalized ads with your consent; Yandex may also process device and ad-interaction data for ad delivery, measurement and fraud prevention under its own policy. Android Auto Backup and device-to-device transfer are disabled; app data is excluded from backup.</p>
+</div>
+
+<div class="policy-section">
+<h3 id="why-and-on-what-basis">4. Purposes and legal bases for processing</h3>
+<ul>
+<li><strong>App functionality.</strong> Local data and the consent record are processed to provide the App and to keep evidence of your consent. Basis: provision of the App / performance of the agreement; accountability for consent.</li>
+<li><strong>Analytics and crash diagnostics.</strong> Analytics and crash/ANR data are processed to understand how the App is used and to improve stability. Basis: consent.</li>
+<li><strong>Rewarded ads.</strong> Advertising data and the advertising ID are processed to show rewarded ads. Basis: consent for personalization; for non-personalized ads, the Operator's legitimate interest in funding the App, where permitted by law.</li>
+<li><strong>Support.</strong> Email address and message are processed to respond to your request. Basis: performance of the agreement / legitimate interest.</li>
+</ul>
+<p>Consent can be withdrawn; withdrawal does not affect prior processing. If the Operator relies on legitimate interest, you have the right to object to that processing.</p>
+</div>
+
+<div class="policy-section">
+<h3 id="data-recipients">5. Recipients of data</h3>
+<p><strong>5.1. Yandex AppMetrica.</strong> For users in Russia, AppMetrica is provided by Yandex LLC, 16 Lva Tolstogo St., Moscow 119021, Russia. For users in the EEA/UK, it is provided by Air Smart Advertising Solutions FZ-LLC, Dubai, UAE. In both cases Yandex acts as a processor: for the EEA/UK under the AppMetrica data processing agreement (DPA), which includes the EU Standard Contractual Clauses; for Russia under the AppMetrica terms. The Operator's AppMetrica analytics and crash reporting module is not enabled until you enable the analytics option. Yandex Mobile Ads is initialized separately when you choose an ad. The Operator passes your analytics choice to Yandex Ads; ad analytics reporting is controlled by that choice. Data: sessions and automatic technical events, device/OS/version, IP, pseudonymous ID, install source if available, crashes/ANR. The Operator's AppMetrica configuration disables location tracking and advertising-identifier tracking in AppMetrica. The Yandex Ads SDK may use the advertising ID for ads as described in section 5.2. The Operator intentionally does not send task titles/descriptions, names or email addresses. Crash reports may contain technical context such as the stack trace, device, OS and app version. Withdrawal of analytics stops further sending while the option is off. For details, see the <a href="https://yandex.ru/legal/metrica_agreement/en/">AppMetrica DPA</a> and <a href="https://yandex.com/legal/metrica_termsofuse/">AppMetrica Terms</a>.</p>
+<p><strong>5.2. Yandex Mobile Ads.</strong> For users in Russia, the ad service is provided by Yandex LLC, 16 Lva Tolstogo St., Moscow 119021, Russia. For users in the EEA/UK, it is provided by Air Smart Advertising Solutions FZ-LLC, Dubai, UAE; depending on the relationship, another group entity, including Direct Cursus Technology L.L.C., Dubai, UAE, may act as controller. For other regions, the entity named in the applicable Yandex terms applies. Rewarded ads are personalized only with separate consent; otherwise they are non-personalized. Ads are loaded and shown only when you choose to watch one. The Android advertising ID may be used for personalized ads with your consent. The Operator does not request access to your device's precise location; the ad SDK may infer an approximate location from your IP address. Opting out of analytics does not disable ads; without consent to personalization, new ad requests are non-personalized. For ads, Yandex acts as an independent controller and processes ad data under its own terms and the Yandex International Ads Privacy Policy, including for ad delivery, measurement and fraud prevention. For details, see the <a href="https://yandex.com/legal/international_ads_privacy/en/">Yandex International Ads Privacy Policy</a>.</p>
+<p><strong>5.3. Email provider.</strong> Support correspondence is processed by VK LLC (Mail.ru), Moscow, Russia, which acts as the Operator's email provider. The provider processes the email address, message and standard email metadata needed to deliver and store the correspondence. For EEA/UK users, this is a transfer to Russia; information about the applicable safeguards can be requested from the Operator.</p>
+<p><strong>5.4. Third parties.</strong> The Operator does not control the policies of Yandex or other external services. Their processing is governed by their own documents: <a href="https://yandex.com/legal/confidential/">Yandex Privacy Policy</a>, <a href="https://yandex.com/legal/metrica_termsofuse/">AppMetrica Terms</a>, <a href="https://yandex.ru/legal/metrica_agreement/en/">AppMetrica DPA</a>, <a href="https://yandex.com/legal/mobileads_sdk_agreement/">Yandex Mobile Ads SDK License</a>, <a href="https://yandex.com/legal/yan_dpa_ch">YAN DPA</a>, <a href="https://yandex.com/legal/international_ads_privacy/en/">Yandex International Ads Privacy Policy</a>, and <a href="https://help.mail.ru/legal/terms/common/privacy/">VK/Mail.ru Privacy Policy</a>. Yandex may use subprocessors. The Operator may disclose data where required by law.</p>
+</div>
+
+<div class="policy-section">
+<h3 id="international-transfers">6. International transfers</h3>
+<p>Yandex states that data of users in Russia is stored in Russia. For the EEA/UK, the AppMetrica DPA with Air Smart Advertising Solutions FZ-LLC includes the EU Standard Contractual Clauses. Yandex's Privacy Policy also states that data of EEA users may be transferred to Russia and that Yandex relies on Standard Contractual Clauses for that transfer. The Operator relies on those mechanisms. For users in Russia, the Operator processes data in accordance with 152-FZ.</p>
+<p>The Operator discloses ad data to Yandex Ads as an independent controller. Yandex Ads may transfer that data to third countries, including Russia and the UAE, as described in the Yandex International Ads Privacy Policy. Yandex Ads is responsible for its own onward transfers; its policy describes the safeguards and provides more information on the transfer mechanisms on request. The Operator will provide information about the applicable safeguard for its disclosure to Yandex Ads on request. For EEA/UK users, support correspondence is transferred to Russia as described in section 5.3; information about the applicable safeguard can be requested from the Operator.</p>
+<p>Local tasks are not transferred off the device through backup or operator servers.</p>
+</div>
+
+<div class="policy-section">
+<h3 id="retention-and-deletion">7. Retention and deletion</h3>
+<ul>
+<li>Local data: until you delete it or uninstall the App.</li>
+<li>Analytics and crash data: for as long as the Operator uses AppMetrica for analytics and crash reporting, and afterwards for the period Yandex needs to delete the data under the DPA and applicable law. The DPA sets this retention criterion rather than a fixed number of days; the Operator can provide the current DPA on request.</li>
+<li>Advertising: for as long as needed to deliver and measure ads, prevent fraud and comply with law, as described in Yandex's privacy policy.</li>
+<li>Consent: stored locally until the App is uninstalled or its data is cleared.</li>
+<li>Support: until the request is resolved and for the period required by law.</li>
+</ul>
+<p><strong>How to delete data.</strong> You can remove app content using the in-app data removal option, or delete all local data by clearing app data or uninstalling the App. Support correspondence can be deleted on request at <a href="mailto:epic-to-do-list@mail.ru">epic-to-do-list@mail.ru</a>. For analytics and crash reports, disable analytics in Settings or uninstall the App to stop further sending while the option is off. For analytics and crash data that has already been transferred, the Operator can forward your request to Yandex, but because the data is pseudonymized, specific records may not be identifiable; some data may remain at Yandex until retention periods expire.</p>
+</div>
+
+<div class="policy-section">
+<h3 id="security">8. Security</h3>
+<p>The Operator uses technical and organizational measures to protect data, including encryption in transit and limited access. The Operator applies reasonable security measures and will notify regulators and users where required by law. The Operator does not request access to precise device location, contacts, camera or microphone; the ad SDK may infer an approximate location from your IP address, as described in section 5.2. The Operator does not carry out automated decision-making with legal effects.</p>
+</div>
+
+<div class="policy-section">
+<h3 id="your-rights-and-complaints">9. Your rights and complaints</h3>
+<p>The rights available to you depend on your location and may include access, rectification, erasure, restriction, objection, portability, withdrawal of consent and complaint. These rights apply only to data the Operator can identify. Contact: <a href="mailto:epic-to-do-list@mail.ru">epic-to-do-list@mail.ru</a>. The Operator verifies requests and responds within the period required by applicable law. If the Operator needs more time, the Operator will tell you. The JSON export includes the main app data: tasks, hero, settings, progress, products and notifications. It may also include technical state needed to restore the App. The consent record is stored locally on your device and is not included in the export. You can view and change your current choices in Settings. Analytics requests are handled on request.</p>
+<p><strong>What this means in practice.</strong> The rights apply to your personal data. You control local data yourself. If data is pseudonymized and the Operator lacks information to locate it, the Operator may ask for additional details; if a record cannot be identified, the Operator will explain the available options. See “Retention and deletion” above.</p>
+<p><strong>How to complain.</strong> If you believe the Operator has violated your rights, contact the Operator using the details above. The Operator will review the request and respond. You also have the right to lodge a complaint with a competent supervisory authority.</p>
+</div>
+
+<div class="policy-section">
+<h3 id="consent-and-withdrawal">10. Consent and withdrawal</h3>
+<p>Analytics is off by default and is enabled only with your consent. You can give, refuse or withdraw consent in the App; your current choice is shown in Settings. The analytics consent covers both analytics and crash reporting. Withdrawing analytics stops further sending of analytics and crash data while the option is off.</p>
+<p><strong>Personalized ads.</strong> Personalized ads are off by default and are enabled only with separate consent. Without consent, ads are non-personalized. You can change your choice in Settings; after withdrawal, new ad requests are non-personalized.</p>
+</div>
+
+<div class="policy-section">
+<h3 id="children">11. Children</h3>
+<p>The App is intended for a general audience. It is not designed or marketed for children, and the Operator does not knowingly collect personal data from children. If you are below the age at which you can consent to data processing in your country (for example, under 16 in some EEA countries), use the App only with parent or guardian consent. If you believe a child has provided personal data, contact the Operator.</p>
+</div>
+</div>
+
+<div id="policy-ru" lang="ru" hidden>
+<p class="policy-meta">Дата вступления в силу: 25 октября 2026 г.</p>
+
+<div class="policy-section">
+<h3 id="operator-ru">1. Оператор</h3>
+<p>Оператор: ИП Колмачихин Александр Станиславович, ИНН 540549978493, ОГРНИП 326547600161892, Новосибирск, Россия.</p>
+<p>Контакт по данным: <a href="mailto:epic-to-do-list@mail.ru">epic-to-do-list@mail.ru</a>.</p>
+<p>Приложение: Epic to-do list, идентификатор приложения <code>kolmachikhin.alexander.epicto_dolist</code>.</p>
+</div>
+
+<div class="policy-section">
+<h3 id="область-действия-и-версия">2. Область действия и версия</h3>
+<p>Политика применяется ко всем пользователям. Оператор обрабатывает данные в соответствии с применимым законодательством. Если применимое законодательство предоставляет вам дополнительные права, они действуют наряду с настоящей Политикой. Ничто в настоящей Политике не ограничивает права, которые не могут быть ограничены по закону.</p>
+<p>Политика не применяется к сайтам и сервисам третьих лиц.</p>
+</div>
+
+<div class="policy-section">
+<h3 id="data-operator-processes-ru">3. Какие данные обрабатывает Оператор</h3>
+<ul>
+<li><strong>Локальные данные.</strong> Задачи, навыки, данные героя, настройки, прогресс и другие данные приложения. Эти данные создаёт пользователь или приложение; они не передаются и остаются на устройстве, если вы сами не экспортируете или не передадите их.</li>
+<li><strong>Аналитика.</strong> Сессии и автоматические технические события, устройство/ОС/версия, IP, псевдонимный ID, источник установки. Источник — приложение и SDK AppMetrica; данные передаются в Yandex.</li>
+<li><strong>Сбои/ANR.</strong> Стек-трейсы, диагностика устройства/ОС/приложения. Источник — приложение и SDK AppMetrica; данные передаются в Yandex.</li>
+<li><strong>Реклама.</strong> IP, устройство, показы, клики, рекламный ID (для персонализированной рекламы, при согласии). Источник — приложение и SDK Yandex Ads; данные передаются в Yandex.</li>
+<li><strong>Согласие.</strong> Выбор, время и версия. Пользователь делает этот выбор; данные о выборе, времени и версии никуда не передаются и остаются на устройстве.</li>
+<li><strong>Поддержка.</strong> Адрес электронной почты и письмо. Их вводит пользователь; они передаются провайдеру электронной почты Оператора.</li>
+</ul>
+<p>Оператор намеренно не собирает специальные категории персональных данных и не передаёт содержимое задач в Yandex по своей инициативе. Приложение может хранить то, что вы вводите в локальных задачах, на вашем устройстве; не вводите чувствительные данные, если не готовы хранить их локально. Оператор не запрашивает доступ к точному местоположению устройства, контактам, камере и микрофону; рекламный SDK может определять приблизительное местоположение по IP-адресу. Рекламный идентификатор Android может использоваться для персонализированной рекламы с вашего согласия; Yandex может также обрабатывать данные об устройстве и взаимодействии с рекламой для показа, измерения и предотвращения мошенничества в соответствии со своей политикой. Автоматическое резервное копирование Android и перенос между устройствами отключены; данные приложения исключены из резервного копирования.</p>
+</div>
+
+<div class="policy-section">
+<h3 id="зачем-и-на-каком-основании">4. Цели и основания обработки данных</h3>
+<ul>
+<li><strong>Работа приложения.</strong> Локальные данные и запись о согласии обрабатываются для предоставления приложения и подтверждения согласия. Основание: предоставление приложения / исполнение соглашения; подотчётность по согласию.</li>
+<li><strong>Аналитика и диагностика сбоев.</strong> Данные аналитики и сбоев/ANR обрабатываются для понимания использования приложения и улучшения стабильности. Основание: согласие.</li>
+<li><strong>Реклама с вознаграждением.</strong> Рекламные данные и рекламный ID обрабатываются для показа рекламы с вознаграждением. Основание: согласие для персонализации; для неперсонализированной рекламы — законный интерес Оператора в финансировании приложения, где это допускается законом.</li>
+<li><strong>Поддержка.</strong> Адрес электронной почты и письмо обрабатываются для ответа на обращение. Основание: исполнение соглашения / законный интерес.</li>
+</ul>
+<p>Согласие можно отозвать; отзыв не влияет на прошлую обработку. Если Оператор обрабатывает данные на основании законного интереса, вы вправе возразить против такой обработки.</p>
+</div>
+
+<div class="policy-section">
+<h3 id="data-recipients-ru">5. Получатели данных</h3>
+<p><strong>5.1. Yandex AppMetrica.</strong> Для пользователей в России AppMetrica предоставляет Yandex LLC, 16 Lva Tolstogo St., Moscow 119021, Russia. Для пользователей ЕЭЗ/UK — Air Smart Advertising Solutions FZ-LLC, Dubai, UAE. В обоих случаях Yandex действует как обработчик: для ЕЭЗ/UK — по DPA AppMetrica, включающему Стандартные договорные условия ЕС; для России — по условиям AppMetrica. Модуль AppMetrica Оператора для аналитики и отчётов о сбоях не включается, пока вы не включите аналитику. Yandex Mobile Ads инициализируется отдельно, когда вы выбираете рекламу. Оператор передаёт ваш выбор по аналитике в Yandex Ads; рекламная аналитика управляется этим выбором. Данные: сессии и автоматические технические события, устройство/ОС/версия, IP, псевдонимный ID, источник установки, если доступен, сбои/ANR. В конфигурации AppMetrica Оператора отключены отслеживание местоположения и рекламных идентификаторов в AppMetrica. SDK Yandex Ads может использовать рекламный ID для рекламы, как описано в разделе 5.2. Названия/описания задач, имена и адреса электронной почты намеренно не передаются. Отчёты о сбоях могут содержать технический контекст: стек-трейс, устройство, ОС и версию приложения. Отзыв аналитики останавливает дальнейшую отправку, пока опция выключена. Подробнее — в <a href="https://yandex.ru/legal/metrica_agreement/en/">DPA AppMetrica</a> и <a href="https://yandex.com/legal/metrica_termsofuse/">условиях AppMetrica</a>.</p>
+<p><strong>5.2. Yandex Mobile Ads.</strong> Для пользователей в России рекламный сервис предоставляет Yandex LLC, 16 Lva Tolstogo St., Moscow 119021, Russia. Для пользователей ЕЭЗ/UK — Air Smart Advertising Solutions FZ-LLC, Dubai, UAE; в зависимости от договора контроллером может выступать другая компания группы, включая Direct Cursus Technology L.L.C., Dubai, UAE. Для других регионов — компания, указанная в применимых условиях Yandex. Реклама с вознаграждением персонализируется только при отдельном согласии; иначе она неперсонализированная. Реклама загружается и показывается только когда вы выбираете её посмотреть. Рекламный идентификатор Android может использоваться для персонализированной рекламы с вашего согласия. Оператор не запрашивает доступ к точному местоположению устройства; рекламный SDK может определять приблизительное местоположение по IP-адресу. Отказ от аналитики не отключает рекламу; без согласия на персонализацию новые рекламные запросы являются неперсонализированными. Для рекламы Yandex действует как самостоятельный контроллер и обрабатывает рекламные данные по своим условиям и Международной политике конфиденциальности рекламы Yandex, в том числе для показа, измерения и предотвращения мошенничества. Подробнее можно прочитать в <a href="https://yandex.com/legal/international_ads_privacy/en/">Международной политике конфиденциальности рекламы Yandex</a>.</p>
+<p><strong>5.3. Провайдер электронной почты.</strong> Переписку поддержки обрабатывает VK LLC (Mail.ru), Москва, Россия, выступающий провайдером электронной почты Оператора. Провайдер обрабатывает адрес электронной почты, сообщение и стандартные метаданные письма, необходимые для доставки и хранения переписки. Для пользователей ЕЭЗ/UK это передача в Россию; информацию о применимых механизмах защиты можно запросить у Оператора.</p>
+<p><strong>5.4. Третьи стороны.</strong> Оператор не контролирует политики Yandex и других внешних сервисов. Их обработка регулируется их собственными документами: <a href="https://yandex.com/legal/confidential/">Политика конфиденциальности Yandex</a>, <a href="https://yandex.com/legal/metrica_termsofuse/">Условия AppMetrica</a>, <a href="https://yandex.ru/legal/metrica_agreement/en/">DPA AppMetrica</a>, <a href="https://yandex.com/legal/mobileads_sdk_agreement/">Лицензия Yandex Mobile Ads SDK</a>, <a href="https://yandex.com/legal/yan_dpa_ch">DPA Рекламной сети Яндекса</a>, <a href="https://yandex.com/legal/international_ads_privacy/en/">Международная политика конфиденциальности рекламы Yandex</a>, <a href="https://help.mail.ru/legal/terms/common/privacy/">Политика конфиденциальности VK/Mail.ru</a>. Yandex может привлекать субобработчиков. Оператор может раскрывать данные, когда это требуется законом.</p>
+</div>
+
+<div class="policy-section">
+<h3 id="передача-за-границу">6. Передача за границу</h3>
+<p>Yandex указывает, что данные пользователей из России хранятся в России. Для ЕЭЗ/UK DPA AppMetrica с Air Smart Advertising Solutions FZ-LLC включает Стандартные договорные условия ЕС. Политика конфиденциальности Yandex также указывает, что данные пользователей из ЕЭЗ могут передаваться в Россию и что Yandex использует для такой передачи Стандартные договорные условия. Оператор полагается на эти механизмы. Для пользователей в России Оператор обрабатывает данные в соответствии с 152-ФЗ.</p>
+<p>Оператор раскрывает рекламные данные Yandex Ads как самостоятельному контроллеру. Yandex Ads может передавать эти данные в третьи страны, включая Россию и ОАЭ, как описано в Международной политике конфиденциальности рекламы Yandex. Yandex Ads отвечает за свои последующие передачи; его политика описывает меры защиты и предоставляет дополнительную информацию о механизмах передачи по запросу. Оператор предоставит информацию о применимой мере защиты для своей передачи в Yandex Ads по запросу. Для пользователей ЕЭЗ/UK переписка поддержки передаётся в Россию, как описано в разделе 5.3; информацию о применимой мере защиты можно запросить у Оператора.</p>
+<p>Локальные задачи не передаются за пределы устройства через резервное копирование или серверы Оператора.</p>
+</div>
+
+<div class="policy-section">
+<h3 id="сроки-хранения-и-удаление-данных">7. Сроки хранения и удаление данных</h3>
+<ul>
+<li>Локальные данные — до удаления или удаления приложения.</li>
+<li>Аналитика и сбои — пока Оператор использует AppMetrica для аналитики и отчётов о сбоях, и затем в течение срока, необходимого Yandex для удаления данных по DPA и применимому закону. DPA задаёт этот критерий хранения, а не фиксированное число дней; текущий DPA можно получить по запросу.</li>
+<li>Реклама — в течение срока, необходимого для показа и измерения рекламы, предотвращения мошенничества и соблюдения закона, как описано в политике конфиденциальности Yandex.</li>
+<li>Согласие — локально до удаления приложения или очистки данных.</li>
+<li>Поддержка — до завершения обращения и на срок, требуемый законом.</li>
+</ul>
+<p><strong>Как удалить данные.</strong> Локальные данные можно удалить с помощью встроенной функции удаления данных в приложении; чтобы удалить все локальные данные, очистите данные приложения или удалите приложение. Переписку поддержки можно удалить по запросу на <a href="mailto:epic-to-do-list@mail.ru">epic-to-do-list@mail.ru</a>. Для аналитики и отчётов о сбоях отключите аналитику в настройках или удалите приложение, чтобы остановить дальнейшую отправку, пока опция выключена. По уже переданным данным аналитики и сбоев Оператор может направить запрос в Yandex, но из-за псевдонимизации может не идентифицировать конкретные записи; часть данных может оставаться у Yandex до истечения сроков хранения.</p>
+</div>
+
+<div class="policy-section">
+<h3 id="безопасность">8. Безопасность</h3>
+<p>Оператор использует технические и организационные меры защиты данных, включая шифрование при передаче и ограничение доступа. Оператор применяет разумные меры безопасности и уведомляет регуляторов и пользователей, когда это требуется законом. Оператор не запрашивает доступ к точному местоположению устройства, контактам, камере и микрофону; рекламный SDK может определять приблизительное местоположение по IP-адресу, как описано в разделе 5.2. Оператор не осуществляет автоматизированное принятие решений с юридическими последствиями.</p>
+</div>
+
+<div class="policy-section">
+<h3 id="ваши-права-и-жалобы">9. Ваши права и жалобы</h3>
+<p>Права зависят от вашего местоположения и могут включать доступ, исправление, удаление, ограничение, возражение, переносимость, отзыв согласия и жалобу. Эти права применяются только к данным, которые Оператор может идентифицировать. Контакт: <a href="mailto:epic-to-do-list@mail.ru">epic-to-do-list@mail.ru</a>. Оператор проверяет запрос и отвечает в срок, установленный применимым законом. Если нужно больше времени, Оператор сообщит. JSON-экспорт включает основные данные приложения: задачи, героя, настройки, прогресс, продукты и уведомления. Он также может включать техническое состояние, необходимое для восстановления приложения. Запись о согласии хранится локально на вашем устройстве и в экспорт не входит. Текущий выбор можно посмотреть и изменить в Настройках. По аналитике — запрос.</p>
+<p><strong>Что это значит на практике.</strong> Права применяются к вашим персональным данным. Локальные данные вы контролируете сами. Если данные псевдонимизированы и Оператору не хватает информации для их поиска, Оператор может запросить дополнительные сведения; если идентифицировать запись невозможно, Оператор объяснит доступные варианты. Подробнее — в разделе «Сроки хранения и удаление данных».</p>
+<p><strong>Как пожаловаться.</strong> Если вы считаете, что Оператор нарушил ваши права, напишите по контакту, указанному выше. Оператор рассмотрит обращение и ответит. Вы также вправе подать жалобу в компетентный надзорный орган.</p>
+</div>
+
+<div class="policy-section">
+<h3 id="согласие-и-его-отзыв">10. Согласие и его отзыв</h3>
+<p>Аналитика по умолчанию выключена и включается только с вашим согласием. Согласие можно дать, отклонить или отозвать в приложении; текущий выбор отображается в Настройках. Согласие на аналитику охватывает и аналитику, и отчёты о сбоях. Отзыв аналитики останавливает дальнейшую отправку аналитики и сбоев, пока опция выключена.</p>
+<p><strong>Персонализированная реклама.</strong> По умолчанию выключена и включается только при отдельном согласии. Без согласия реклама неперсонализированная. Изменить выбор можно в Настройках; после отзыва новые рекламные запросы являются неперсонализированными.</p>
+</div>
+
+<div class="policy-section">
+<h3 id="дети">11. Дети</h3>
+<p>Приложение предназначено для широкой аудитории. Оно не предназначено и не продвигается для детей; Оператор сознательно не собирает персональные данные детей. Если вы младше возраста, с которого в вашей стране можно давать согласие на обработку данных (например, младше 16 лет в некоторых странах ЕЭЗ), используйте приложение только с согласия родителя или опекуна. Если вы считаете, что ребёнок передал персональные данные, напишите Оператору.</p>
+</div>
+</div>
+
+<div id="policy-it" lang="it" hidden>
+<p class="policy-meta">Data di entrata in vigore: 25 ottobre 2026.</p>
+
+<div class="policy-section">
+<h3 id="operatore">1. Operatore</h3>
+<p>Operatore: Imprenditore Individuale Aleksandr Stanislavovich Kolmachikhin, INN 540549978493, OGRNIP 326547600161892, Novosibirsk, Russia.</p>
+<p>Contatto per i dati: <a href="mailto:epic-to-do-list@mail.ru">epic-to-do-list@mail.ru</a>.</p>
+<p>App: Epic to-do list, identificativo dell'applicazione <code>kolmachikhin.alexander.epicto_dolist</code>.</p>
+</div>
+
+<div class="policy-section">
+<h3 id="ambito-e-versione">2. Ambito e versione</h3>
+<p>La presente Informativa si applica a tutti gli utenti. L'Operatore tratta i dati in conformità alla legge applicabile. Se la legge del Suo Paese Le riconosce ulteriori diritti, tali diritti si applicano insieme alla presente Informativa. Nessuna disposizione della presente Informativa limita i diritti che non possono essere limitati per legge.</p>
+<p>La presente Informativa non si applica a siti web o servizi di terzi.</p>
+</div>
+
+<div class="policy-section">
+<h3 id="dati-trattati-dall-operatore">3. Dati trattati dall'Operatore</h3>
+<ul>
+<li><strong>Dati locali.</strong> Attività, abilità, dati del personaggio, impostazioni, progressi e altri dati dell'app. Questi dati sono creati dall'utente o generati dall'App; non vengono trasferiti e restano sul dispositivo, a meno che non li esporti o condivida tu stesso.</li>
+<li><strong>Analisi.</strong> Sessioni ed eventi tecnici automatici, dispositivo/SO/versione, IP, ID pseudonimo, origine dell'installazione. L'App e l'SDK AppMetrica forniscono questi dati; vengono trasferiti a Yandex.</li>
+<li><strong>Arresti anomali/ANR.</strong> Stack trace, diagnostica di dispositivo/SO/app. L'App e l'SDK AppMetrica forniscono questi dati; vengono trasferiti a Yandex.</li>
+<li><strong>Pubblicità.</strong> IP, dispositivo, impressioni, clic, ID pubblicitario (per annunci personalizzati, con consenso). L'App e l'SDK Yandex Ads forniscono questi dati; vengono trasferiti a Yandex.</li>
+<li><strong>Consenso.</strong> Scelta, data e versione. L'utente fornisce questi dati; non vengono trasferiti e restano sul dispositivo.</li>
+<li><strong>Supporto.</strong> Indirizzo email e messaggio. L'utente fornisce questi dati; vengono trasferiti al provider di posta elettronica dell'Operatore.</li>
+</ul>
+<p>L'Operatore non raccoglie intenzionalmente categorie particolari di dati personali e non invia intenzionalmente il contenuto delle attività a Yandex. L'App può memorizzare sul dispositivo ciò che l'utente inserisce nelle attività locali; non inserisca dati sensibili se non è disposto a memorizzarli localmente. L'Operatore non richiede l'accesso alla posizione precisa del dispositivo, ai contatti, alla fotocamera o al microfono; l'SDK pubblicitario può dedurre una posizione approssimativa dall'indirizzo IP. L'ID pubblicitario Android può essere utilizzato per annunci personalizzati con il consenso dell'utente; Yandex può inoltre trattare dati sul dispositivo e sulle interazioni pubblicitarie per la consegna, la misurazione e la prevenzione delle frodi, secondo la propria informativa. Il backup automatico di Android e il trasferimento tra dispositivi sono disattivati; i dati dell'App sono esclusi dal backup.</p>
+</div>
+
+<div class="policy-section">
+<h3 id="perche-e-su-quale-base">4. Finalità e basi giuridiche del trattamento</h3>
+<ul>
+<li><strong>Funzionamento dell'App.</strong> I dati locali e il record del consenso sono trattati per fornire l'App e documentare il consenso. Base giuridica: fornitura dell'App / esecuzione del contratto; responsabilità del consenso.</li>
+<li><strong>Analisi e diagnostica degli arresti anomali.</strong> I dati di analisi e arresti anomali/ANR sono trattati per comprendere l'uso dell'App e migliorare la stabilità. Base giuridica: consenso.</li>
+<li><strong>Pubblicità con ricompensa.</strong> I dati pubblicitari e l'ID pubblicitario sono trattati per mostrare annunci con ricompensa. Base giuridica: consenso per la personalizzazione; per gli annunci non personalizzati, interesse legittimo dell'Operatore al finanziamento dell'App, ove consentito dalla legge.</li>
+<li><strong>Supporto.</strong> L'indirizzo email e il messaggio sono trattati per rispondere alla richiesta. Base giuridica: esecuzione del contratto / interesse legittimo.</li>
+</ul>
+<p>Il consenso può essere revocato; la revoca non pregiudica il trattamento precedente. Se l'Operatore si basa sull'interesse legittimo, l'utente ha il diritto di opporsi a tale trattamento.</p>
+</div>
+
+<div class="policy-section">
+<h3 id="destinatari-dei-dati">5. Destinatari dei dati</h3>
+<p><strong>5.1. Yandex AppMetrica.</strong> Per gli utenti in Russia, AppMetrica è fornito da Yandex LLC, 16 Lva Tolstogo St., Moscow 119021, Russia. Per gli utenti nello SEE/Regno Unito, è fornito da Air Smart Advertising Solutions FZ-LLC, Dubai, UAE. In entrambi i casi Yandex agisce come responsabile del trattamento: per lo SEE/Regno Unito in base al DPA AppMetrica, che include le Clausole Contrattuali Standard UE; per la Russia in base ai termini di AppMetrica. Il modulo AppMetrica dell'Operatore per analisi e arresti anomali non viene attivato finché l'utente non abilita l'opzione analisi. Yandex Mobile Ads viene inizializzato separatamente quando l'utente sceglie un annuncio. L'Operatore trasmette la scelta dell'utente in materia di analisi a Yandex Ads; il reporting pubblicitario è controllato da tale scelta. Dati: sessioni ed eventi tecnici automatici, dispositivo/SO/versione, IP, ID pseudonimo, origine dell'installazione se disponibile, arresti anomali/ANR. Nella configurazione AppMetrica dell'Operatore sono disattivati il tracciamento della posizione e il tracciamento degli identificatori pubblicitari in AppMetrica. L'SDK Yandex Ads può utilizzare l'ID pubblicitario per la pubblicità, come descritto nella sezione 5.2. L'Operatore non invia intenzionalmente titoli/descrizioni delle attività, nomi o indirizzi email. I rapporti sugli arresti anomali possono contenere contesto tecnico come stack trace, dispositivo, SO e versione dell'app. La revoca dell'analisi interrompe l'invio ulteriore mentre l'opzione è disattivata. Per maggiori dettagli, consulta il <a href="https://yandex.ru/legal/metrica_agreement/en/">DPA AppMetrica</a> e i <a href="https://yandex.com/legal/metrica_termsofuse/">Termini AppMetrica</a>.</p>
+<p><strong>5.2. Yandex Mobile Ads.</strong> Per gli utenti in Russia, il servizio pubblicitario è fornito da Yandex LLC, 16 Lva Tolstogo St., Moscow 119021, Russia. Per gli utenti nello SEE/Regno Unito, è fornito da Air Smart Advertising Solutions FZ-LLC, Dubai, UAE; a seconda del rapporto, un'altra entità del gruppo, inclusa Direct Cursus Technology L.L.C., Dubai, UAE, può agire come titolare del trattamento. Per le altre regioni si applica l'entità indicata nei termini Yandex applicabili. Gli annunci con ricompensa sono personalizzati solo con consenso separato; altrimenti sono non personalizzati. Gli annunci vengono caricati e mostrati solo quando l'utente sceglie di guardarne uno. L'ID pubblicitario Android può essere utilizzato per annunci personalizzati con il consenso dell'utente. L'Operatore non richiede l'accesso alla posizione precisa del dispositivo; l'SDK pubblicitario può dedurre una posizione approssimativa dall'indirizzo IP. La rinuncia all'analisi non disattiva la pubblicità; senza consenso alla personalizzazione, le nuove richieste pubblicitarie sono non personalizzate. Per la pubblicità, Yandex agisce come titolare autonomo del trattamento e tratta i dati pubblicitari secondo i propri termini e l'Informativa internazionale sulla privacy pubblicitaria di Yandex, anche per la consegna, la misurazione e la prevenzione delle frodi. Per maggiori dettagli, consulta l'<a href="https://yandex.com/legal/international_ads_privacy/en/">Informativa internazionale sulla privacy pubblicitaria di Yandex</a>.</p>
+<p><strong>5.3. Provider di posta elettronica.</strong> La corrispondenza di supporto è trattata da VK LLC (Mail.ru), Mosca, Russia, che agisce come provider di posta elettronica dell'Operatore. Il provider tratta l'indirizzo email, il messaggio e i metadati standard dell'email necessari per consegnare e conservare la corrispondenza. Per gli utenti dello SEE/Regno Unito, ciò comporta un trasferimento in Russia; informazioni sulle garanzie applicabili possono essere richieste all'Operatore.</p>
+<p><strong>5.4. Terze parti.</strong> L'Operatore non controlla le informative di Yandex o di altri servizi esterni. Il loro trattamento è disciplinato dai loro documenti: <a href="https://yandex.com/legal/confidential/">Informativa sulla privacy di Yandex</a>, <a href="https://yandex.com/legal/metrica_termsofuse/">Termini AppMetrica</a>, <a href="https://yandex.ru/legal/metrica_agreement/en/">DPA AppMetrica</a>, <a href="https://yandex.com/legal/mobileads_sdk_agreement/">Licenza Yandex Mobile Ads SDK</a>, <a href="https://yandex.com/legal/yan_dpa_ch">DPA YAN</a>, <a href="https://yandex.com/legal/international_ads_privacy/en/">Informativa internazionale sulla privacy pubblicitaria di Yandex</a>, e <a href="https://help.mail.ru/legal/terms/common/privacy/">Informativa sulla privacy VK/Mail.ru</a>. Yandex può avvalersi di sub-responsabili. L'Operatore può divulgare dati quando richiesto dalla legge.</p>
+</div>
+
+<div class="policy-section">
+<h3 id="trasferimento-transfrontaliero">6. Trasferimento transfrontaliero</h3>
+<p>Yandex dichiara che i dati degli utenti in Russia sono conservati in Russia. Per lo SEE/Regno Unito, il DPA AppMetrica con Air Smart Advertising Solutions FZ-LLC include le Clausole Contrattuali Standard UE. L'Informativa sulla privacy di Yandex dichiara inoltre che i dati degli utenti dello SEE possono essere trasferiti in Russia e che Yandex si avvale delle Clausole Contrattuali Standard per tale trasferimento. L'Operatore si basa su tali meccanismi. Per gli utenti in Russia, l'Operatore tratta i dati in conformità alla legge federale russa 152-FZ.</p>
+<p>L'Operatore comunica i dati pubblicitari a Yandex Ads come titolare autonomo del trattamento. Yandex Ads può trasferire tali dati in paesi terzi, inclusi Russia ed Emirati Arabi Uniti, come descritto nell'Informativa internazionale sulla privacy pubblicitaria di Yandex. Yandex Ads è responsabile dei propri trasferimenti successivi; la sua informativa descrive le garanzie e fornisce maggiori informazioni sui meccanismi di trasferimento su richiesta. L'Operatore fornirà informazioni sulla garanzia applicabile per la propria comunicazione a Yandex Ads su richiesta. Per gli utenti dello SEE/Regno Unito, la corrispondenza di supporto viene trasferita in Russia come descritto nella sezione 5.3; informazioni sulla garanzia applicabile possono essere richieste all'Operatore.</p>
+<p>I dati locali non vengono trasferiti dal dispositivo tramite backup o server dell'Operatore.</p>
+</div>
+
+<div class="policy-section">
+<h3 id="conservazione-e-cancellazione">7. Conservazione e cancellazione</h3>
+<ul>
+<li>Dati locali — fino alla cancellazione o alla disinstallazione dell'App.</li>
+<li>Analisi e arresti anomali — per il periodo in cui l'Operatore utilizza AppMetrica per analisi e arresti anomali e, successivamente, per il periodo necessario a Yandex per cancellare i dati ai sensi del DPA e della legge applicabile. Il DPA stabilisce questo criterio di conservazione, non un numero fisso di giorni; il DPA attuale può essere richiesto all'Operatore.</li>
+<li>Pubblicità — per il periodo necessario alla consegna e alla misurazione degli annunci, alla prevenzione delle frodi e al rispetto della legge, come descritto nell'Informativa sulla privacy di Yandex.</li>
+<li>Consenso — localmente fino alla disinstallazione dell'App o alla cancellazione dei dati.</li>
+<li>Supporto — fino alla risoluzione della richiesta e per il periodo richiesto dalla legge.</li>
+</ul>
+<p><strong>Come cancellare i dati.</strong> I dati locali possono essere rimossi tramite la funzione di rimozione dati nell'App; per cancellare tutti i dati locali, cancelli i dati dell'App o disinstalli l'App. La corrispondenza di supporto può essere cancellata su richiesta scrivendo a <a href="mailto:epic-to-do-list@mail.ru">epic-to-do-list@mail.ru</a>. Per analisi e arresti anomali, disattivi l'analisi nelle impostazioni o disinstalli l'App per interrompere l'invio ulteriore mentre l'opzione è disattivata. Per i dati di analisi e arresti anomali già trasferiti, l'Operatore può inoltrare la richiesta a Yandex, ma a causa della pseudonimizzazione potrebbe non essere in grado di identificare specifiche registrazioni; alcuni dati possono rimanere presso Yandex fino alla scadenza dei periodi di conservazione.</p>
+</div>
+
+<div class="policy-section">
+<h3 id="sicurezza">8. Sicurezza</h3>
+<p>L'Operatore utilizza misure tecniche e organizzative per proteggere i dati, inclusa la crittografia in transito e l'accesso limitato. L'Operatore adotta misure ragionevoli di sicurezza e notificherà le autorità di controllo e gli utenti quando richiesto dalla legge. L'Operatore non richiede l'accesso alla posizione precisa del dispositivo, ai contatti, alla fotocamera o al microfono; l'SDK pubblicitario può dedurre una posizione approssimativa dall'indirizzo IP, come descritto nella sezione 5.2. L'Operatore non effettua decisioni automatizzate con effetti giuridici.</p>
+</div>
+
+<div class="policy-section">
+<h3 id="diritti-e-reclami">9. Diritti e reclami</h3>
+<p>I diritti disponibili dipendono dalla Sua posizione e possono includere accesso, rettifica, cancellazione, limitazione, opposizione, portabilità, revoca del consenso e reclamo. Questi diritti si applicano solo ai dati che l'Operatore è in grado di identificare. Contatto: <a href="mailto:epic-to-do-list@mail.ru">epic-to-do-list@mail.ru</a>. L'Operatore verifica le richieste e risponde entro il termine previsto dalla legge applicabile. Se l'Operatore necessita di più tempo, informerà l'utente. L'esportazione JSON include i dati principali dell'App: attività, personaggio, impostazioni, progressi, prodotti e notifiche. Può includere anche lo stato tecnico necessario a ripristinare l'App. Il record del consenso è memorizzato localmente sul dispositivo e non è incluso nell'esportazione. Puoi visualizzare e modificare le scelte attuali nelle Impostazioni. Le richieste relative all'analisi sono gestite su richiesta.</p>
+<p><strong>Cosa significa in pratica.</strong> I diritti si applicano ai Suoi dati personali. L'utente controlla direttamente i dati locali. Se i dati sono pseudonimizzati e l'Operatore non dispone delle informazioni per localizzarli, l'Operatore può chiedere ulteriori dettagli; se una registrazione non può essere identificata, l'Operatore spiegherà le opzioni disponibili. Per ulteriori informazioni, veda la sezione «Conservazione e cancellazione».</p>
+<p><strong>Come presentare un reclamo.</strong> Se ritiene che l'Operatore abbia violato i Suoi diritti, contatti l'Operatore utilizzando i recapiti sopra indicati. L'Operatore esaminerà la richiesta e risponderà. Ha inoltre il diritto di presentare un reclamo a un'autorità di controllo competente.</p>
+</div>
+
+<div class="policy-section">
+<h3 id="consenso-e-revoca">10. Consenso e revoca</h3>
+<p>L'analisi è disattivata per impostazione predefinita e viene attivata solo con il tuo consenso. Puoi dare, rifiutare o revocare il consenso nell'App; la scelta attuale è visibile nelle Impostazioni. Il consenso all'analisi copre sia le analisi sia i rapporti sugli arresti anomali. La revoca dell'analisi interrompe l'invio ulteriore di analisi e arresti anomali mentre l'opzione è disattivata.</p>
+<p><strong>Pubblicità personalizzata.</strong> È disattivata per impostazione predefinita e viene attivata solo con consenso separato. Senza consenso, gli annunci sono non personalizzati. Puoi modificare la scelta nelle Impostazioni; dopo la revoca, le nuove richieste pubblicitarie sono non personalizzate.</p>
+</div>
+
+<div class="policy-section">
+<h3 id="minori">11. Minori</h3>
+<p>L'App è destinata a un pubblico generale. Non è progettata o commercializzata per i minori e l'Operatore non raccoglie consapevolmente dati personali di minori. Se l'utente è al di sotto dell'età alla quale può prestare il consenso al trattamento dei dati nel proprio Paese (ad esempio, meno di 16 anni in alcuni Paesi dello SEE), utilizzi l'App solo con il consenso di un genitore o tutore. Se ritiene che un minore abbia fornito dati personali, contatti l'Operatore.</p>
+</div>
+</div>
+
+<script>
+    (function () {
+        var en = document.getElementById('policy-en');
+        var ru = document.getElementById('policy-ru');
+        var it = document.getElementById('policy-it');
+        var title = document.getElementById('policy-title');
+        var select = document.getElementById('language-select');
+
+        function setLanguage(language) {
+            var isRussian = language === 'ru';
+            var isItalian = language === 'it';
+            en.hidden = isRussian || isItalian;
+            ru.hidden = !isRussian;
+            it.hidden = !isItalian;
+            document.documentElement.lang = isItalian ? 'it' : (isRussian ? 'ru' : 'en');
+            title.textContent = isItalian ? 'Informativa sulla privacy' : (isRussian ? 'Политика конфиденциальности' : 'Privacy Policy');
+            select.value = isItalian ? 'it' : (isRussian ? 'ru' : 'en');
+            try {
+                localStorage.setItem('epic-policy-language', language);
+            } catch (e) {
+            }
+        }
+
+        select.addEventListener('change', function () {
+            setLanguage(select.value);
+        });
+
+        var saved = null;
+        try {
+            saved = localStorage.getItem('epic-policy-language');
+        } catch (e) {
+        }
+        setLanguage(saved === 'ru' || saved === 'it' ? saved : 'en');
+    })();
+</script>
+
 </body>
 
 </html>
